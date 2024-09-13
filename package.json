@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
-    "type-check": "vue-tsc -b"
+    "type-check": "vue-tsc -b",
+    "schema": "npx openapi-typescript https://petstore3.swagger.io/api/v3/openapi.json --output src/schema.d.ts"
   },
   "dependencies": {
     "@primevue/themes": "^4.0.5",
@@ -28,6 +29,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.28.0",
+    "openapi-typescript": "^7.4.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0",
