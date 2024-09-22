@@ -10,10 +10,12 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "type-check": "vue-tsc -b",
-    "schema": "npx openapi-typescript https://petstore3.swagger.io/api/v3/openapi.json --output src/schema.d.ts && prettier src/schema.d.ts --write"
+    "schema": "npx openapi-typescript https://petstore.swagger.io/v2/swagger.json --output src/schema.d.ts && prettier src/schema.d.ts --write"
   },
   "dependencies": {
     "@primevue/themes": "^4.0.5",
+    "axios": "^1.7.7",
+    "pinia": "^2.2.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.5",
     "vue": "^3.4.37"
@@ -29,7 +31,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.28.0",
-    "openapi-typescript": "^7.4.0",
+    "openapi-typescript": "^5.4.2",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0",
