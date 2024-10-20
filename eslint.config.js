@@ -8,14 +8,19 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   {
-    files: ['**/*.{ts,tsx,js,jsx}'],
+    files: ['**/*.{ts,tsx,js,jsx,vue}'],
     ignores: ['dist'],
     rules: {
       '@typescript-eslint/no-unused-vars': 'warn',
+      'vue/no-reserved-component-names': 'off',
     },
   },
   {
-    ignores: ['src/schema.d.ts'],
+    ignores: [
+      'src/api/api.types.ts',
+      'tailwind.config.js',
+      'postcss.config.js',
+    ],
   },
   eslintConfigPrettier
 );
